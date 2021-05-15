@@ -1,0 +1,55 @@
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<AnchorPane fx:controller="controller.AddContactController" xmlns:fx="http://javafx.com/fxml"
+            prefHeight="353" prefWidth="543">
+    <children>
+        <Label layoutX="24" layoutY="23" prefHeight="22" prefWidth="194" text="Add a new Contact">
+            <font>
+                <Font name="System Bold" size="17"/>
+            </font>
+        </Label>
+        <Label layoutX="24" layoutY="63" text="First Name:"/>
+        <TextField fx:id="firstName" layoutX="105" layoutY="58"/>
+        <Label layoutX="24" layoutY="99" text="Last Name:"/>
+        <TextField fx:id="lastName" layoutX="105" layoutY="94"/>
+        <Label layoutX="24" layoutY="133" text="Phone:"/>
+        <TextField fx:id="phone" layoutX="105" layoutY="128"/>
+        <Label layoutX="24" layoutY="166" text="Email:"/>
+        <TextField fx:id="email" layoutX="105" layoutY="170"/>
+        <Label layoutX="24" layoutY="207" text="Birth date:"/>
+        <DatePicker fx:id="dob" layoutX="105" layoutY="211"/>
+        <ComboBox fx:id="cbGroup" layoutX="105" layoutY="249" prefWidth="150"/>
+        <Button fx:id="btnAdd" layoutX="25" layoutY="308" mnemonicParsing="false" text="Save" onAction="#saveContact"/>
+        <Button fx:id="btnClose" layoutX="99" layoutY="308" mnemonicParsing="false" text="Close" onAction="#saveContact"/>
+        <Label fx:id="lblFirstName" layoutX="299" layoutY="63" text="First name can't be empty" textFill="#e13421">
+            <font>
+                <Font name="System italic" size="12"/>
+            </font>
+        </Label>
+        <Label fx:id="lblLastName" layoutX="299" layoutY="100" text="Last name can't be empty" textFill="#e13421">
+            <font>
+                <Font name="System italic" size="12"/>
+            </font>
+        </Label>
+        <Label fx:id="lblPhone" layoutX="299" layoutY="134" text="Phone contains digits only" textFill="#e13421">
+            <font>
+                <Font name="System italic" size="12"/>
+            </font>
+        </Label>
+        <Label fx:id="lblEmail" layoutX="299" layoutY="167" text="Email is invalid" textFill="#e13421">
+            <font>
+                <Font name="System italic" size="12"/>
+            </font>
+        </Label>
+        <Label fx:id="lbldob" layoutX="311" layoutY="217" text="Birth date must be less than current date" textFill="#e13421">
+            <font>
+                <Font name="System italic" size="12"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

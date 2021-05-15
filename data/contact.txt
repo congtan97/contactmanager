@@ -1,0 +1,6 @@
+Charlie        :Snow           :84987234123:john@gmail.com           :1987-12-31:Family    :Hanoi     
+Adam           :Smith          :84980720100:adam.smithn@gmail.com    :1990-07-22:Friend    :Danang    
+Jean           :Tonogbanua     :85231678987:jean@yahoo.com           :9-9-1993  :Family    :HoChiminh 
+Tan            :Truong         :0985269740:tan@gmail.com            :2021-04-07:Family    :Hue       
+John           :Walker         :4242213   :jwalker@sida.com         :2021-04-17:Colleague :Dalat     
+Dung           :Ha             :5332423   :hadung@edu.vn            :2021-03-29:Hater     :Binh Dinh 

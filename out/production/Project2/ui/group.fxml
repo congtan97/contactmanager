@@ -1,0 +1,20 @@
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<AnchorPane fx:controller="controller.GroupController" xmlns:fx="http://javafx.com/fxml"
+            prefHeight="380" prefWidth="580">
+    <children>
+        <Label layoutX="26.0" layoutY="23.0" text="Enter to search:" />
+        <TextField fx:id="search" layoutX="151.0" layoutY="19.0" prefHeight="25.0" prefWidth="171.0" />
+        <Button fx:id="btnSearch" onAction="#groupAction" layoutX="336.0" layoutY="19.0" mnemonicParsing="false" text="Search" />
+        <ListView fx:id="tblGroup" layoutX="26.0" layoutY="63.0" prefHeight="300.0" prefWidth="200.0" />
+        <Label layoutX="250.0" layoutY="71.0" text="Enter group name:" />
+        <TextField fx:id="groupName" layoutX="250.0" layoutY="100.0" prefHeight="25.0" prefWidth="274.0" />
+        <Button fx:id="btnDelete" onAction="#groupAction" layoutX="472.0" layoutY="155.0" mnemonicParsing="false" text="Delete" />
+        <Button fx:id="btnUpdate" onAction="#groupAction" layoutX="402.0" layoutY="155.0" mnemonicParsing="false" text="Update" />
+        <Button fx:id="btnAdd" onAction="#groupAction" layoutX="349.0" layoutY="155.0" mnemonicParsing="false" text="Add" />
+        <Button fx:id="btnClose" onAction="#groupAction" layoutX="498.0" layoutY="337.0" mnemonicParsing="false" text="Close" />
+    </children>
+</AnchorPane>
